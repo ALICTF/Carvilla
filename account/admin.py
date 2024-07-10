@@ -17,5 +17,5 @@ class CustomAdminPanel(UserAdmin):
         (None, {'fields': ['email']}),
     )
     fieldsets = UserAdmin.fieldsets  + (
-        ('Other Fields', {'fields': ['gender', 'birthday', 'stats', 'city']}),
+        ('Other Fields', {'fields': ['gender', 'city', 'description']}),
     )

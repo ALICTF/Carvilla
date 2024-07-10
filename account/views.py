@@ -5,7 +5,6 @@ from django.urls import reverse_lazy
 from django.contrib import auth
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
-from django.utils.html import format_html
 
 from .forms import SignupForm
 
