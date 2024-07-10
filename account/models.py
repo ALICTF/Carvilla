@@ -12,7 +12,7 @@ class CustomUser(AbstractUser):
     gender = models.CharField(default='M', choices=GENDER_CHOICES, max_length=1, blank=True)
     city = models.CharField(max_length=255, blank=True)
     description = models.TextField(blank=True)
-    # image = models.ImageField(upload_to='/cover/profile/', blank=True, null=True)
+    # picture = models.ImageField(upload_to='/user/img/%Y/%m/', blank=True, null=True)
     
     def __str__(self):
         return self.username
