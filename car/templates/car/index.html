@@ -1,0 +1,41 @@
+{% load static humanize %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarVilla</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="shortcut icon" type="image/icon" href="{% static 'logo/favicon.png" ' %}/>
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+</head>
+
+<body class="mx-auto">
+    <section class="secHead ">
+        <div class="nav">
+            <div class="container">
+                <nav class="d-flex align-items-center justify-content-between">
+                    <div class="br"><a href="#">CARVILLA</a></div>
+                    <div class="navul">
+                        <ul class="d-flex">
+                            <li><a href="{% url 'cars' %}">HOME</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">FEATURED CARS</a></li>
+                            <li><a href="#">NEW CARS</a></li>
+                            <li><a href="#">BRANDS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
