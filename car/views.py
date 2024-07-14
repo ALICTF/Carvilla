@@ -1,6 +1,15 @@
 from django.shortcuts import render
+from django.views.generic import ListView
 
-from django.views.generic import TemplateView
+from .models import Brand, Car
 
-class HomeView(TemplateView):
-    template_name = 'car/home.html'
+def home_view(request):
+    cars = Car.objects.all()
+    brands = Brand.objects.all()
+    
+    context = {
+        'cars': cars,
+        'brands': brands
+    }
+
+    return render(request, 'car/home.html', context)

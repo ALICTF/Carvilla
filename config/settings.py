@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t#n^0(w#bl3d-j0i!#hp_n_!($*x!uz0vo9tcze6@qn*!6&zb2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'django.contrib.humanize',
+        
     # Ohter app
     'debug_toolbar',
     
@@ -139,6 +140,7 @@ STATIC_URL = '/static/'
 STATICFILE_DIRS = str(BASE_DIR.joinpath('static'))
 
 # Media File
+
 
 
 # Default primary key field type
