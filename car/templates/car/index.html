@@ -1,4 +1,4 @@
-{% load static humanize %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,10 +19,10 @@
         <div class="nav">
             <div class="container">
                 <nav class="d-flex align-items-center justify-content-between">
-                    <div class="br"><a href="{% url 'cars' %}">CARVILLA</a></div>
+                    <div class="br"><a href="{% url 'home' %}">CARVILLA</a></div>
                     <div class="navul">
                         <ul class="d-flex navUl">
-                            <li class="p-3 active"><a href="{% url 'cars' %}">HOME</a></li>
+                            <li class="p-3 active"><a href="{% url 'home' %}">HOME</a></li>
                             <li class="p-3"><a href="#">SERVICES</a></li>
                             <li class="p-3"><a href="#">FEATURED CARS</a></li>
                             <li class="p-3"><a href="#">NEW CARS</a></li>
