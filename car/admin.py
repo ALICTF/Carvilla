@@ -4,16 +4,19 @@ from .models import Brand, Car
 
 
 @admin.register(Car)
-class AdminCarView(admin.ModelAdmin):
+class AdminCar(admin.ModelAdmin):
     list_display = ('title', 'maker', 'price', )
     list_editable = ('maker', )
     list_per_page = 15
     list_filter = ('maker', )
     ordering = ('title', )
 
+
 @admin.register(Brand)
-class AdminBrandView(admin.ModelAdmin):
+class AdminBrand(admin.ModelAdmin):
     list_display = ('title', )
     list_per_page = 15
     ordering = ('title', )
+    fields = ('title', 'description', 'datetime_created', 'datatime_modified')
+    readonly_fields = ('datetime_created', 'datatime_modified')
     
